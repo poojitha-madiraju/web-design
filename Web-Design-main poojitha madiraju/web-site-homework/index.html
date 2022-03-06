@@ -1,0 +1,78 @@
+<!-- Standard name of any html page -->
+<!-- When this Project is uploaded to the Server -->
+<!-- This is the file which gets loaded as a Front Page -->
+<!-- The moment we name, index.html -> can be viewed as a Browser Page -->
+
+<!-- Basic Structure -->
+<!DOCTYPE html>
+<!-- lang -> Content written in english -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--viewport will be useful when we use responsive design, different layouts for different devices-->
+    <title>My First Web Page</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <!-- visible content of the page-->
+  <!--Elements to organize the contents -->
+  <body>
+    <header>Working with CSS Semantic Elements</header>
+
+    <article>
+      <section id="title-section">
+        <div class="author-details">by Poojitha Sri Madiraju | Explore 5 mins</div>
+        <h1>Getting started with CSS</h1>
+        <div class="share">
+          Share this post
+          <a href="https://instagram.com"
+            ><img src="./images/instagram.png" width="20px" height="20px"
+          /></a>
+          <a href="https://facebook.com"
+            ><img src="./images/facebook.png" width="20px" height="20px"
+          /></a>
+          <a href="https://linkedin.com"
+            ><img src="./images/linkedin.png" width="20px" height="20px"
+          /></a>
+        </div>
+      </section>
+
+      <section>
+        <img src="images/websiteImage.jpg" />
+      </section>
+      <!-- This is paragaraph tag -->
+      <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.</p>
+
+      <div class="div-section">
+        <h2>Uses of CSS</h2>
+
+        <!-- Ordered Lists -->
+        <ol>
+          <!--Each of the items will be the list element-->
+          <li>Adds styling to the pages</li>
+          <li>Increases the readability of the webpage</li>
+          <li>Provides the user with a better experience</li>
+        </ol>
+      </div>
+      <div class="div-section">
+        <h2>There are three types of CSS</h2>
+        <!-- Unordered Lists, defaults to bullets -> can be removed with CSS -->
+        <ul>
+          <li>Inline CSS</li>
+          <li>Internal CSS</li>
+          <li>External CSS</li>
+        </ul>
+      </div>
+      <div class="div-section">
+        <h2>Video for reference on CSS</h2>
+        <section>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yfoY53QXEnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+      </div>
+    </article>
+  </body>
+</html>
+<!-- End tags with forward slash -->

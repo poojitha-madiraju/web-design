@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/form.css" />
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NOTE:<div> is a block level element -> used here to wrap the entire form and it's elements inside div, 
+      makes it easier to center and apply design to the entire form in a nicer way, refer to the styling of "container" in ./style.css -->
+    <div class="container">
+      <h3>Play with FORMS!!!</h3>
+      <form id="form-main" onsubmit="event.preventDefault();">
+        <!-- TODO: onsubmit feature to be discussed in the upcoming class -->
+        <div>
+          <label> First Name </label>
+          <input type="text" name="firstName" id="firstName" />
+        </div>
+        <div>
+          <label> Last Name </label>
+          <input type="text" name="lastName" id="lastName" />
+        </div>
+
+        <div>
+          <label> Employee ID </label>
+          <input type="number" name="empId" id="empId" />
+        </div>
+
+        <div>
+          <label> Designation </label>
+          <input type="text" name="designation" id="designation" />
+        </div>
+        <!-- <div>
+          <label>Status</label> -->
+        <!-- TODO:Need to add radio button -->
+        <!-- </div> -->
+        <!-- //TODO: Add Salary -->
+        <div>
+          <button class="submit">Submit</button>
+          <button class="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
