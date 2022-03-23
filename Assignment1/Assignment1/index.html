@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Assignment 1</title>
+  </head>
+  <body>
+    By Poojitha Sri Madiraju
+
+    <div class="box">
+      <form action="javascript:addnewcar()">
+        <label for="carno">Car Number: </label
+        ><input type="text" id="carno" name="carno" /><br />
+        <label for="brand">Brand: </label
+        ><input type="text" id="brand" name="brand" /><br />
+        <label for="model">Model: </label
+        ><input type="text" id="model" name="model" /><br />
+        <label for="manufacturingyear">Manufacturing Year: </label
+        ><input
+          type="text"
+          id="manufacturingyear"
+          name="manufacturingyear"
+        /><br />
+        <label for="cartype">Car Type: </label
+        ><input type="text" id="cartype" name="cartype" /><br />
+        <input type="submit" />
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Car Number</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Manufacturing Year</th>
+            <th>Car Type</th>
+          </tr>
+        </thead>
+        <tbody id="cars"></tbody> <!-- table contents -->
+      </table>
+    </div>
+
+    <script>
+      //function to add new car to the table
+      function addnewcar() {
+        let carno = document.getElementById("carno").value; //getting the car number
+        let brand = document.getElementById("brand").value; //getting the brand name
+        let model = document.getElementById("model").value; //getting car model
+        let manufacturingyear = document.getElementById("manufacturingyear").value; //getting manufacturing year of the car
+        let cartype = document.getElementById("cartype").value; //getting type of the car
+
+        let carlist = document.getElementById("cars"); //body of the table
+
+        let cardetails = document.createElement("tr"); 
+
+        cardetails.innerHTML =
+          "<td>" + carno + "</td>" +
+          "<td>" + brand + "</td>" +
+          "<td>" + model + "</td>" +
+          "<td>" + manufacturingyear + "</td>" +
+          "<td>" + cartype + "</td>";
+
+        carlist.appendChild(cardetails); //adding the details to the table
+      }
+    </script>
+  </body>
+</html>

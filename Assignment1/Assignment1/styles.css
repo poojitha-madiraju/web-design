@@ -1,0 +1,34 @@
+body {
+    background-image: url('scenery.jpg');
+}
+
+table{
+    margin-top: 15px;
+    background-color: lightblue;
+}
+
+tr, th,td, table{
+    padding: 5px 15px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+input, label{
+    margin-top: 15px;
+}
+
+form {
+    background-color: aquamarine;
+    margin: 15px;
+    padding: 15px;
+}
+
+input[type=submit] {
+    border: none;
+    padding: 5px 15px;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
