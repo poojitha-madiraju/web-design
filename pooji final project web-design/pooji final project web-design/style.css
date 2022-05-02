@@ -38,6 +38,7 @@ nav img{
     display: inline-block;
     padding: 10px 14px;
     position: relative;
+    
 }
 .navigation ul li a{
     color:white;
@@ -100,8 +101,11 @@ nav img{
     .navigation ul li{
         display: block;
     }
+    .navigation ul{
+        padding: 30px;
+    }
     .navigation{
-        position: absolute;
+        position: fixed;
         background: #f4437f;
         height: 100vh;
         width: 200px;
@@ -109,13 +113,13 @@ nav img{
         right: 0;
         text-align: left;
         z-index: 2;
+        transition: 0.5s;
     }
-    .header a {
-        float: none;
+    nav .fa{
         display: block;
-        text-align: left;
-      }
-    .header-right {
-        float: none;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer; 
     }
-}
+    
