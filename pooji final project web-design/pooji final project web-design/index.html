@@ -7,46 +7,96 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="" />
     <title>Code Curl</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
   </head>
   <body>
     <section class="main">
       <nav>
-        <a href="index.html"><img src="" alt="" /></a>
-        <div class="header">
-          <div class="navigation">
-            <ul>
-              <li><a href="">ABOUT</a></li>
-              <li><a href="">PRODUCTS</a></li>
-              <li><a href="">CONTACT</a></li>
-            </ul>
-            <div class="messagebox">
-              <h1>Code Curl.</h1>
-              <p>
-                Embrace your curls everyday.<br />
-                Enjoy the beauty of Natural Hair.
-              </p>
-            </div>
-          </div>
+        <a href="index.html"><img src="" /></a>
+        <div class="navigation" id="naviGation">
+          <i class="fa fa-times" onclick="menuHide()"></i>
+          <ul>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">PRODUCTS</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
         </div>
+        <i class="fa fa-bars" onclick="displayMenu()"></i>
       </nav>
+      <div class="messagebox">
+        <h1>Code Curl.</h1>
+        <p>
+          Embrace your curls everyday,<br />Enjoy the beauty of Natural Hair.
+        </p>
+      </div>
     </section>
-    <section class="tips">
-      <h1></h1>
-      <p></p>
+
+    <!---------ABOUT----------->
+
+    <section class="ABOUT">
+      <h1>ABOUT US</h1>
+      <p>Code Curl helps you Managing Healthy Curly Hair.</p>
       <div class="row">
-        <div class="guide-col">
-          <h3>Curl Guide Book</h3>
-          <p></p>
+        <div class="about-col">
+          <h3>Start Here</h3>
+          <p>
+            The most important curly haircare advice we can give! Creat a
+            routine that meets your hair's needs. you may be wondering how you
+            can figure your hair out?Steps that will help your transition into
+            curly hair and help reduce frizz 1) Use, castor oil/ coconut oil 2)
+            use sulfate and silicone free shampoo and conditioner: 3) Use
+            cold/lukewarm water to wash your hair 4) Use a cótton tshirt to dry/
+            remove excess water from your hair 5) Always Detangle curly hair
+            while it's wet with conditioner or when oiled 6) Sleep on a satin
+            pillowcase or bonnet 7) Always use a gel after washing off the
+            conditioner and let it dry untouched
+          </p>
         </div>
-        <div class="styling-col">
-          <h3>Styling techniques</h3>
-          <p></p>
+        <div class="about-col">
+          <h3>Start Here</h3>
+          <p>
+            The most important curly haircare advice we can give! Creat a
+            routine that meets your hair's needs. you may be wondering how you
+            can figure your hair out?Steps that will help your transition into
+            curly hair and help reduce frizz 1) Use, castor oil/ coconut oil 2)
+            use sulfate and silicone free shampoo and conditioner: 3) Use
+            cold/lukewarm water to wash your hair 4) Use a cótton tshirt to dry/
+            remove excess water from your hair 5) Always Detangle curly hair
+            while it's wet with conditioner or when oiled 6) Sleep on a satin
+            pillowcase or bonnet 7) Always use a gel after washing off the
+            conditioner and let it dry untouched
+          </p>
         </div>
-        <div class="DIY-col">
-          <h3>One min DIY's</h3>
-          <p></p>
+        <div class="about-col">
+          <h3>Start Here</h3>
+          <p>
+            The most important curly haircare advice we can give! Creat a
+            routine that meets your hair's needs. you may be wondering how you
+            can figure your hair out?Steps that will help your transition into
+            curly hair and help reduce frizz 1) Use, castor oil/ coconut oil 2)
+            use sulfate and silicone free shampoo and conditioner: 3) Use
+            cold/lukewarm water to wash your hair 4) Use a cótton tshirt to dry/
+            remove excess water from your hair 5) Always Detangle curly hair
+            while it's wet with conditioner or when oiled 6) Sleep on a satin
+            pillowcase or bonnet 7) Always use a gel after washing off the
+            conditioner and let it dry untouched
+          </p>
         </div>
       </div>
     </section>
+
+    <!------JavaScrit for Toggle Menu------->
+    <script>
+      var naviGation = document.getElementById("naviGation");
+      function displayMenu() {
+        naviGation.style.right = "0";
+      }
+      function menuHide() {
+        naviGation.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
