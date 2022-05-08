@@ -106,7 +106,15 @@ nav .fa{
 }
 /*------- ABOUT -------*/
 
+
 .ABOUT{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* .ABOUT{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -149,11 +157,11 @@ h3{
 }
 /* media for row in the smaller screen */
 
-@media(max-width: 700px){
+/* @media(max-width: 700px){
     .row{
         flex-direction: column;
     }
-}
+}  */
 
 /* --------SERVICES-------- */
 
@@ -214,4 +222,13 @@ h3{
     text-align: center;
     padding-top: 50px;
 }
-
+.products-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.products-col{
+    width: 100%;
+}

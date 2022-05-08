@@ -11,6 +11,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!---------link for bootstrap tabs----------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   </head>
   <body>
     <section class="main">
@@ -19,10 +25,10 @@
         <div class="navigation" id="naviGation">
           <i class="fa fa-times" onclick="menuHide()"></i>
           <ul>
-            <li><a href="ABOUT.html">ABOUT</a></li>
-            <li><a href="">SERVICES</a></li>
-            <li><a href="">PRODUCTS</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#products">PRODUCTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="displayMenu()"></i>
@@ -37,64 +43,65 @@
 
     <!---------ABOUT----------->
 
-    <section class="ABOUT">
+    <section class="ABOUT" id="about">
       <h1>ABOUT US</h1>
-      <p>Code Curl helps you Managing Healthy Curly Hair.</p>
-      <div class="row">
-        <div class="about-col">
-          <h3>Start Here</h3>
-          <p>
-            The most important curly haircare advice we can give! Creat a
-            routine that meets your hair's needs. you may be wondering how you
-            can figure your hair out?Steps that will help your transition into
-            curly hair and help reduce frizz 1) Use, castor oil/ coconut oil 2)
-            use sulfate and silicone free shampoo and conditioner: 3) Use
-            cold/lukewarm water to wash your hair 4) Use a cótton tshirt to dry/
-            remove excess water from your hair 5) Always Detangle curly hair
-            while it's wet with conditioner or when oiled 6) Sleep on a satin
-            pillowcase or bonnet 7) Always use a gel after washing off the
-            conditioner and let it dry untouched
-          </p>
+      <div class="container">
+        
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#menu1">Start here</a></li>
+          <li><a data-toggle="tab" href="#menu2">CGM-Curl Girl Method</a></li>
+          <li><a data-toggle="tab" href="#menu3">Curly Hair Essential Knowledge</a></li>
+        </ul>
+      
+        <div class="tab-content">
+          <div id="menu1" class="tab-pane fade in active">
+            <p>The most important curly haircare advice we can give! Creat a
+              routine that meets your hair's needs. you may be wondering how you
+              can figure your hair out?Steps that will help your transition into
+              curly hair and help reduce frizz 1) Use, castor oil/ coconut oil 2)
+              use sulfate and silicone free shampoo and conditioner: 3) Use
+              cold/lukewarm water to wash your hair 4) Use a cótton tshirt to dry/
+              remove excess water from your hair 5) Always Detangle curly hair
+              while it's wet with conditioner or when oiled 6) Sleep on a satin
+              pillowcase or bonnet 7) Always use a gel after washing off the
+              conditioner and let it dry untouched</p>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <p>Invented by Lorraine Massey (pictured above) & explained in her book
+              ‘Curly Girl: The Handbook’ (get it if you haven’t already), in the
+              CG method or CGM, you do not use any hair products with sulphates,
+              silicones, mineral oil, waxes, drying alcohols (also called
+              ‘Baddies’) in your curly hair routine.This means you clean your
+              scalp & hair with either non-sulphate shampoos (Low Poo or Modified
+              CG) or botanical cleansing conditioners (called No Poo, Co Washing &
+              Pure CG).</p>
+          </div>
+          <div id="menu3" class="tab-pane fade">
+            <p>Besides straight hair, there can be either wavy, curly or kinky
+              hair. A, B, C explains the width of the wave, curl or kink.There are
+              3 types of wavy hair- light (2A), medium (2B) to high (2C). They can
+              require light to moderate hydration and get great results even with
+              protein in their hair products. This texture also gets easily
+              weighed down so using lightweight products and clarifying (using a
+              sulphate shampoo free of silicones) regularly is essential.Curly
+              hair types varies from loose to tight curls and one usually always
+              has more than one type. Hair is more defined, shrink easily and
+              curls often start right at the root.Again, there are 3 types of
+              curly hair – 3A, 3B & 3C!This hair type needs a lot of hydration and
+              moisture from leave in conditioners, creams and gels to keep the
+              frizz away. Depending on intensity of curliness, you can get great
+              results with multiple styling products too. This pattern also
+              requires a lot of elbow grease to straighten and gets damaged
+              easily.</p>
+          </div>
         </div>
-        <div class="about-col">
-          <h3>CGM-Curl Girl Method</h3>
-          <p>
-            Invented by Lorraine Massey (pictured above) & explained in her book
-            ‘Curly Girl: The Handbook’ (get it if you haven’t already), in the
-            CG method or CGM, you do not use any hair products with sulphates,
-            silicones, mineral oil, waxes, drying alcohols (also called
-            ‘Baddies’) in your curly hair routine.This means you clean your
-            scalp & hair with either non-sulphate shampoos (Low Poo or Modified
-            CG) or botanical cleansing conditioners (called No Poo, Co Washing &
-            Pure CG).
-          </p>
-        </div>
-        <div class="about-col">
-          <h3>Curly Hair Essential Knowledge</h3>
-          <p>
-            Besides straight hair, there can be either wavy, curly or kinky
-            hair. A, B, C explains the width of the wave, curl or kink.There are
-            3 types of wavy hair- light (2A), medium (2B) to high (2C). They can
-            require light to moderate hydration and get great results even with
-            protein in their hair products. This texture also gets easily
-            weighed down so using lightweight products and clarifying (using a
-            sulphate shampoo free of silicones) regularly is essential.Curly
-            hair types varies from loose to tight curls and one usually always
-            has more than one type. Hair is more defined, shrink easily and
-            curls often start right at the root.Again, there are 3 types of
-            curly hair – 3A, 3B & 3C!This hair type needs a lot of hydration and
-            moisture from leave in conditioners, creams and gels to keep the
-            frizz away. Depending on intensity of curliness, you can get great
-            results with multiple styling products too. This pattern also
-            requires a lot of elbow grease to straighten and gets damaged
-            easily.
-          </p>
+      </div>
         </div>
       </div>
     </section>
-
+  
     <!--------SERVICES------------>
-    <section class="SERVICES">
+    <section class="SERVICES" id="services">
       <h1>SERVICES</h1>
       <p>Code Curl Covers you everything.</p>
       <div class="row">
@@ -120,7 +127,7 @@
       </div>
     </section>
     <!------PRODUCTS------->
-    <section class="PRODUCTS">
+    <section class="PRODUCTS" id="products">
       <h1>PRODUCTS</h1>
       <p>All the Products and accessories you Need for CurlyHair</p>
       <div class="row">
@@ -128,7 +135,45 @@
           <img src="images/Essential Tools for Hair.png" />
         </div>
       </div>
+    </div>
+    <div class="products-col">
+      <img src="images/kids.jpeg" />
+      <div class="layer">
+      </div>
+    </div>
+    <div class="products-col">
+      <img src="images/curlsmith.jpg" />
+      </div>
+    </div>
+  </div>
+
+
     </section>
+
+     <!-------- footer ---------->
+
+     <section class="footer">
+      <h4>Follow us</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        aliquet turpis nulla, eleifend faucibus est<br />sollicitudin ut.
+        Maecenas ut venenatis ex, et dapibus purus.
+      </p>
+      <div class="icons">
+        <a href=https://instagram.com/__pandanion?igshid=YmMyMTA2M2Y=
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href=https://instagram.com/__pandanion?igshid=YmMyMTA2M2Y=
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a href=https://instagram.com/__pandanion?igshid=YmMyMTA2M2Y=
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href=https://instagram.com/__pandanion?igshid=YmMyMTA2M2Y=
+          ><i class="fa fa-linkedin"></i
+        ></a>
+      </div>
+      <a>
 
     <!------JavaScrit for Toggle Menu------->
     <script>
