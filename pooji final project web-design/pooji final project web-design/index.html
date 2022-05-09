@@ -26,7 +26,7 @@
           <i class="fa fa-times" onclick="menuHide()"></i>
           <ul>
             <li><a href="#about">ABOUT</a></li>
-            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#Ser">SERVICES</a></li>
             <li><a href="#products">PRODUCTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
@@ -101,63 +101,83 @@
     </section>
   
     <!--------SERVICES------------>
-    <section class="SERVICES" id="services">
-      <h1>SERVICES</h1>
-      <p>Code Curl Covers you everything.</p>
-      <div class="row">
-        <div class="services-col">
-          <h3>HairCare</h3>
-          <p>
-            1.Olaplex Bond Repair, 2.Moisture Treatments, 3. Protein Treatments,
-            4. Clarifying Treatments, 5. Hot Oil Treatments
-          </p>
+      <h1 style="text-align: center; margin:auto; " id="Ser">SERVICES</h1><br><br>
+      <div class="slideshow-container">
+        <!-- Full-width caption text -->
+        <div class="mySlides">
+          <div class="text">Haie Care: 1.Olaplex Bond Repair 2.Moisture Treatments 3.Protein Treatments</div>
         </div>
-        <div class="services-col">
-          <h3>Curl Dress-up</h3>
-          <p>Cut,Color,Wash and Style for Women,Men,Kids</p>
+  
+        <div class="mySlides">
+          <div class="text">Cut, Color, Wash, and Style </div>
         </div>
-        <div class="services-col">
-          <h3>Curly Consultalion</h3>
-          <p>
-            During a consultation our specialists,1. Analyse your hair, type2.
-            Recommend treatments, 3. Provide continued guidance for a home
-            careroutine and CGM lifestyle changes.
-          </p>
+  
+        <div class="mySlides">
+          <div class="text">During a consultation our specialists Analyse your hair type,recommend treatements,provide continued guidance.</div>
         </div>
+  
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-    </section>
+      <br>
+
+  
+    
     <!------PRODUCTS------->
-    <section class="PRODUCTS" id="products">
+    <div class="PRODUCTS" id="products">
       <h1>PRODUCTS</h1>
       <p>All the Products and accessories you Need for CurlyHair</p>
-      <div class="row">
+      <div class="rowproducts">
         <div class="products-col">
           <img src="images/Essential Tools for Hair.png" />
+          <div class="effect"></div>
+          <h3>ESSENTIAL TOOLS</h3>
         </div>
-      </div>
-    </div>
+      
     <div class="products-col">
       <img src="images/kids.jpeg" />
-      <div class="layer">
+      <h3>FOR KIDS</h3>
+      <div class="effect">
       </div>
     </div>
     <div class="products-col">
       <img src="images/curlsmith.jpg" />
+      <div class="effect"></div>
+      <h3>PRODUCTS</h3>
       </div>
     </div>
   </div>
+</div>
 
 
-    </section>
+<!-- CONTACT US SECTION -->
+<div>
+  <div class="contact_header">
+    <h3>CONTACT</h3>
+  </div><br><br>
+
+  <div class="CONTACT" id="contact">
+    <form action="https://postmail.invotes.com/send"
+      method="post" id="email_form" style="margin: auto;text-align:center;">
+
+      <input type="text" name="subject" placeholder="Subject" size="50px"style="padding: 10px"/>
+      <textarea name="text" placeholder="Message" size="50px"style="padding: 10px;width: 380px"></textarea>
+      <input type="hidden" name="access_token" value="da4flquz7diajztbhmwqqz06" />
+      <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+      <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+      <input id="submit_form" type="submit" value="Submit" size="50px"style="padding: 10px;width: 380px" />
+      <p><a href="https://postmail.invotes.com" target="_blank"></a></p>
+    </form>
+  </div>
+</div><br><br><br>
 
      <!-------- footer ---------->
 
      <section class="footer">
       <h4>Follow us</h4>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        aliquet turpis nulla, eleifend faucibus est<br />sollicitudin ut.
-        Maecenas ut venenatis ex, et dapibus purus.
+         Our aim is to make you fall in love with your curls.
       </p>
       <div class="icons">
         <a href=https://instagram.com/__pandanion?igshid=YmMyMTA2M2Y=
@@ -184,6 +204,49 @@
       function menuHide() {
         naviGation.style.right = "-200px";
       }
+      //script for slideshow//
+        let slideIndex = 1;
+        showSlides(slideIndex);
+  
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+  
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
+  
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+  
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+  
+          slides[slideIndex - 1].style.display = "block";
+        }
+
+// script for postmail
+var submitButton = document.getElementById("submit_form");
+    var form = document.getElementById("email_form");
+    form.addEventListener("submit", function (e) {
+        setTimeout(function() {
+            submitButton.value = "Sending...";
+            submitButton.disabled = true;
+        }, 1);
+    });
+
+      
+
     </script>
   </body>
 </html>
