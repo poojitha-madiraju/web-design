@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../saihtml"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "2130439_lab1"
+	}
+}
